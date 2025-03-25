@@ -1,0 +1,70 @@
+/* Tùy chỉnh cho màn hình lớn (từ 992px trở lên) */
+@media (min-width: 992px) {
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo bên trái, menu và nút bên phải */
+  }
+
+  /* Đặt menu ở giữa */
+  .navbar-nav {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  /* Thanh tìm kiếm ở giữa */
+  .search-form-container {
+    margin: 0 20px;
+  }
+
+  /* Đặt nút Đăng nhập và Đăng ký bên phải */
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/* Tùy chỉnh cho thiết bị di động (dưới 992px) */
+@media (max-width: 991px) {
+  .navbar .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo bên trái, nút hamburger bên phải */
+  }
+
+  /* Ẩn các mục menu và nút Đăng nhập/Đăng ký trên navbar */
+  .navbar-nav,
+  .auth-buttons {
+    display: none;
+  }
+
+  /* Hiển thị thanh tìm kiếm ở giữa */
+  .search-form-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .search-form {
+    max-width: 200px; /* Thu nhỏ thanh tìm kiếm trên mobile */
+  }
+
+  /* Đặt nút hamburger bên phải */
+  .navbar-toggler {
+    order: 2; /* Đảm bảo nút hamburger nằm bên phải */
+  }
+
+  /* Hiển thị lại các mục trong offcanvas */
+  .offcanvas-body .navbar-nav,
+  .offcanvas-body .auth-buttons {
+    display: block;
+  }
+
+  /* Tùy chỉnh nút Đăng nhập/Đăng ký trong offcanvas */
+  .offcanvas-body .auth-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+}

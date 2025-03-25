@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Thanh lí</title>
+    <style>
+      .sell-car-section {
+        padding: 20px;
+        background-color: #f8f9fa;
+      }
+      .car-list {
+        margin-top: 30px;
+      }
+      .car-card {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header (giả lập, bạn có thể thêm từ ví dụ trước) -->
+    <header class="bg-dark text-white py-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">VTT Shop</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#sell-car"
+                  >Bán xe của bạn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main - Form đăng tin -->
+    <main class="container sell-car-section my-5">
+      <h2>Thông Tin</h2>
+      <form id="sellCarForm" class="row g-3">
+        <div class="col-md-6">
+          <label for="brand" class="form-label">Hãng xe</label>
+          <input
+            type="text"
+            class="form-control"
+            id="brand"
+            placeholder="Ví dụ: Lamborghini"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="model" class="form-label">Dòng xe</label>
+          <input
+            type="text"
+            class="form-control"
+            id="model"
+            placeholder="Ví dụ: Aventador"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="year" class="form-label">Năm sản xuất</label>
+          <input
+            type="number"
+            class="form-control"
+            id="year"
+            placeholder="Ví dụ: 2020"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="price" class="form-label">Giá bán</label>
+          <input
+            type="number"
+            class="form-control"
+            id="price"
+            placeholder="Ví dụ: 5000000000 VNĐ"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <label for="images" class="form-label">Hình ảnh</label>
+          <input
+            type="file"
+            class="form-control"
+            id="images"
+            accept="image/*"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <label for="description" class="form-label">Mô tả</label>
+          <textarea
+            class="form-control"
+            id="description"
+            rows="3"
+            placeholder="Mô tả chi tiết về xe"
+            required
+          ></textarea>
+        </div>
+        <div class="col-12">
+          <label for="contact" class="form-label">Thông tin liên hệ</label>
+          <input
+            type="text"
+            class="form-control"
+            id="contact"
+            placeholder="Số điện thoại hoặc email"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Đăng tin</button>
+        </div>
+      </form>
+
+      <!-- Danh sách xe đã đăng -->
+      <div class="car-list">
+        <h3>Danh sách xe đã đăng</h3>
+        <div class="row" id="cars"></div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

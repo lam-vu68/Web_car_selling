@@ -1,0 +1,49 @@
+<!-- dùng loading = "lazy" để tối ưu: để không bị khi mới vô web bị load hết hình ảnh cùng 1 lúc -->
+<!-- dùng đơn vị wight: cacl(...) để chia co dãn theo khung hình -->
+<!-- dùng :root{} để tạp biến -->
+<!-- dùng position: để cho phép điều chỉnh các phần tử trên trang web  -->
+<!-- vận dụng thực tế position fixed dùng để khi cuộn mà icon hoặc hình ảnh đi theo vd mess... còn có thẻ làm thanh menu -->
+<!-- thêm icon cho text dùng awseom -->
+<!-- text-shadow tạo bóng đổ kết hợp hover -->
+<!--  object-fit: cover; để làm ảnh dữ nguyên tỉ lệ khung hình, cắt bơt phân dư thừa -->
+<!-- letter-spacing Dùng giá trị dương để làm cho tiêu đề hoặc văn bản trông thoáng hơn, dễ đọc hơn.  -->
+<!--   z-index: kiểu xoát thứ tự hiển thị    -->
+
+<!-- /* dùng cho trường hợp chữ nhiều chuyển thành dấu 3 chấm sẽ không 
+bị vỡ giao diện  */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* quá 2 dòng sẽ có dấu 3 chấm */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+} -->
+
+<!-- word-break: break-all; buộc từ phải xuống dòng ngay khi không đủ chỗ, ngay cả khi nó bị cắt giữa chừng.         -->
+
+<!-- khi hover dịch lên 16px  -->
+<!-- .work-item:hover {
+  border-color: #2e80ce;
+  /* dich lên 16px */
+  transform: translateY(-16px);
+} -->
+
+<!-- transition: 0.25s;  làm chậm 0.25s-->
+
+<!-- .team-item:hover .team-item__thumb {
+  transform: scale(1.1); tăng tỉ lệ hình
+} -->
+
+<!-- xoay chiều 18- độ -->
+<!-- .control-icon--next {
+  rotate: 180deg;
+} -->
+
+<!-- khoảng cách dưới gạch chân -->
+<!-- text-underline-offset: 5px; -->
+
+<!-- không cho chữ xuông hàng -->
+<!-- white-space: nowrap; -->
