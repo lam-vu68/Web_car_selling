@@ -3,7 +3,6 @@
 // Lấy phần tử navbar
 const navbar = document.querySelector(".navbar");
 
-// Lắng nghe sự kiện cuộn
 window.addEventListener("scroll", function () {
   if (window.scrollY > 250) {
     navbar.classList.add("navbar-scrolled");
@@ -13,43 +12,38 @@ window.addEventListener("scroll", function () {
 });
 // =======================================Phần main===========================================
 // swiper
-const swiper = new Swiper(".hot-cars-slider", {
-  // Số slide hiển thị trên mỗi view
-  slidesPerView: 1,
-  spaceBetween: 20,
-  // Tự động phát
-  autoplay: {
-    delay: 5500,
-    disableOnInteraction: false,
-  },
-  // Nút điều hướng
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  // Thanh phân trang
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // Responsive breakpoints
-  breakpoints: {
-    // Khi màn hình >= 576px (mobile lớn)
-    576: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".hot-cars-slider", {
+    slidesPerView: 3, // Mặc định hiển thị 3 slide
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    // Khi màn hình >= 768px (tablet)
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    // Khi màn hình >= 992px (desktop)
-    992: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
-  },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        centeredSlides: true,
+      },
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+      },
+      992: {
+        slidesPerView: 3,
+        centeredSlides: false,
+      },
+    },
+  });
 });
 // ============================================== Phần bán xe của bạn ================================
 // Lưu trữ danh sách xe tạm thời trong mảng
@@ -80,7 +74,7 @@ document.getElementById("sellCarForm").addEventListener("submit", function (e) {
         ? Array.from(images).map((file) => URL.createObjectURL(file))
         : [],
   };
-
+  cos;
   // Thêm xe vào mảng
   cars.push(car);
 

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/gt.css" />
+    <title>Giới thiệu - Showroom Ô Tô VTT</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <h1 class="logo-heading">VTT</h1>
+          </a>
+
+          <!-- Thanh tìm kiếm (luôn hiển thị) -->
+          <div class="search-form-container">
+            <form class="search-form" role="search">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Tìm kiếm xe..."
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <!-- Nút hamburger cho thiết bị di động -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Nội dung navbar -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu -->
+              <ul
+                class="navbar-nav justify-content-start flex-grow-1 pe-3 gap-3"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Trang Chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Loại xe
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Xe Sedan</a></li>
+                    <li><a class="dropdown-item" href="#">Xe SUV</a></li>
+                    <li><a class="dropdown-item" href="#">Xe bán tải</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Xem tất cả</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./banxecuaban.html">Thanh lý</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+              </ul>
+
+              <!-- Nút Đăng nhập và Đăng ký -->
+              <div class="auth-buttons">
+                <a
+                  href="#"
+                  class="btn btn-login btn-register d-flex justify-content-center align-items-center"
+                >
+                  <i class="fas fa-user"></i> Đăng nhập
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-login btn-register d-flex justify-content-center align-items-center"
+                  >Đăng ký</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Phần Giới thiệu -->
+      <section class="intro-section">
+        <div class="container text-center">
+          <h1 class="intro-title">Chào Mừng Đến Với Showroom Ô Tô VTT</h1>
+          <p class="intro-subtitle">Nơi Huyền Bí Gặp Gỡ Đẳng Cấp</p>
+          <div class="row g-5 intro-content mt-5">
+            <div class="col-lg-6 intro-text text-start">
+              <p class="lead">
+                Showroom Ô Tô VTT đại diện cho sự kết hợp hoàn hảo giữa sang
+                trọng và bí ẩn. Được thành lập vào năm 2020 tại 123 Đường Lê
+                Lợi, TP. Hà Nội, chúng tôi đã mang đến cho hơn 5.000 khách hàng
+                những chiếc xe đẳng cấp, định hình phong cách sống thượng lưu.
+              </p>
+              <p class="fw-bold mt-3">Chúng tôi mang đến:</p>
+              <ul class="list-unstyled">
+                <li>
+                  <strong>Dòng xe tinh tế:</strong> Sedan lịch lãm, SUV mạnh mẽ,
+                  xe bán tải cá tính từ Toyota, Mercedes, BMW, và các mẫu xe
+                  điện tiên tiến.
+                </li>
+                <li>
+                  <strong>Dịch vụ hoàn hảo:</strong> Tư vấn chuyên sâu, trả góp
+                  linh hoạt, bảo dưỡng cao cấp, lái thử độc quyền, và hỗ trợ
+                  thanh lý xe cũ.
+                </li>
+                <li>
+                  <strong>Cam kết tuyệt đối:</strong> Xe kiểm định chuẩn mực,
+                  minh bạch giá cả, bảo hành dài hạn, đội ngũ kỹ thuật hàng đầu
+                  thế giới.
+                </li>
+                <li>
+                  <strong>Đặc quyền thượng lưu:</strong> Tặng gói bảo hiểm toàn
+                  diện và phụ kiện cao cấp cho khách hàng đặt xe trong tháng
+                  này.
+                </li>
+              </ul>
+              <p>
+                Với tầm nhìn "Kiến tạo hành trình vượt thời gian", VTT không chỉ
+                cung cấp xe hơi, mà còn là nơi khởi nguồn cho những trải nghiệm
+                đầy phong cách và bí ẩn.
+              </p>
+              <a href="tel:0909123456" class="btn btn-contact mt-3"
+                >Khám Phá Ngay</a
+              >
+            </div>
+            <div class="col-lg-6 intro-image">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3"
+                alt="Showroom Ô Tô VTT"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <!-- Thống kê -->
+          <div class="row justify-content-center mt-5 intro-stats">
+            <div class="col-md-3 stat-item">
+              <h3>5.000+</h3>
+              <p>Khách Hàng Thượng Lưu</p>
+            </div>
+            <div class="col-md-3 stat-item">
+              <h3>15+</h3>
+              <p>Thương Hiệu Cao Cấp</p>
+            </div>
+            <div class="col-md-3 stat-item">
+              <h3>60+</h3>
+              <p>Chuyên Gia Tinh Tế</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script tùy chỉnh (nếu có) -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

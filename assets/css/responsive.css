@@ -68,3 +68,16 @@
     gap: 10px;
   }
 }
+
+@media (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex; /* Hiện nút điều hướng trên tablet và desktop */
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-slide {
+    width: 250px; /* Giảm chiều rộng slide trên mobile */
+  }
+}
