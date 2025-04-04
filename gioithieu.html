@@ -1,224 +1,451 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font chữ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
-      rel="stylesheet"
+    <title>CarSelling - Mua bán xe ô tô trực tuyến</title>
+    <meta
+      name="description"
+      content="Khám phá những chiếc xe tốt nhất để bán trực tuyến. Mua, bán hoặc tìm hiểu với CarSelling!"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link rel="stylesheet" href="./assets/css/gt.css" />
-    <title>Giới thiệu - Showroom Ô Tô VTT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <h1 class="logo-heading">VTT</h1>
-          </a>
+  <body class="font-sans bg-gray-50">
 
-          <!-- Thanh tìm kiếm (luôn hiển thị) -->
-          <div class="search-form-container">
-            <form class="search-form" role="search">
-              <i class="fas fa-search search-icon"></i>
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Tìm kiếm xe..."
-                aria-label="Search"
-              />
-            </form>
+      <div class="text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          Tìm chiếc xe mơ ước của bạn ngay hôm nay!
+        </h1>
+        <p class="text-xl md:text-2xl mb-8">
+          Mua, Bán hoặc Khám phá hàng ngàn chiếc xe
+        </p>
+        <a
+          href="#"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-block"
+        >
+          Xem ngay
+        </a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16 relative">
+          <span
+            class="relative z-10 px-4 bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent"
+            >Về Chúng Tôi</span
+          >
+          <span
+            class="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-300 to-transparent transform -translate-y-1/2"
+          ></span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-20">
+          <!-- Company Overview Card -->
+          <div
+            class="bg-white rounded-xl shadow-xl p-8 transform transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div class="flex items-center mb-6">
+              <div class="bg-green-100 p-3 rounded-full mr-4">
+                <i class="fas fa-building text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800">VVT</h3>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Thành lập năm 2018, VTT nhanh chóng trở thành nền tảng mua bán xe
+              ô tô trực tuyến uy tín hàng đầu Việt Nam với hơn 500.000 thành
+              viên.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Chúng tôi cung cấp giải pháp toàn diện từ tìm kiếm, so sánh, đánh
+              giá đến hỗ trợ giao dịch mua bán xe minh bạch, an toàn với đội ngũ
+              chuyên gia giàu kinh nghiệm.
+            </p>
           </div>
 
-          <!-- Nút hamburger cho thiết bị di động -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Nội dung navbar -->
+          <!-- Vision & Mission Card -->
           <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
+            class="bg-white rounded-xl shadow-xl p-8 transform transition-all hover:scale-[1.02] hover:shadow-2xl"
           >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+            <div class="flex items-center mb-6">
+              <div class="bg-green-100 p-3 rounded-full mr-4">
+                <i class="fas fa-bullseye text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800">
+                Tầm Nhìn & Sứ Mệnh
+              </h3>
             </div>
-            <div class="offcanvas-body">
-              <!-- Menu -->
-              <ul
-                class="navbar-nav justify-content-start flex-grow-1 pe-3 gap-3"
-              >
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    >Trang Chủ</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Giới thiệu</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Loại xe
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Xe Sedan</a></li>
-                    <li><a class="dropdown-item" href="#">Xe SUV</a></li>
-                    <li><a class="dropdown-item" href="#">Xe bán tải</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item" href="#">Xem tất cả</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./banxecuaban.html">Thanh lý</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Liên hệ</a>
-                </li>
-              </ul>
+            <div class="mb-4">
+              <h4 class="font-semibold text-green-600 mb-2">Tầm nhìn:</h4>
+              <p class="text-gray-600">
+                Trở thành hệ sinh thái mua bán xe ô tô số 1 Việt Nam vào năm
+                2025, phục vụ 1 triệu khách hàng mỗi năm.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-green-600 mb-2">Sứ mệnh:</h4>
+              <p class="text-gray-600">
+                Kết nối người mua và người bán xe với trải nghiệm đơn giản, minh
+                bạch và tiết kiệm nhất thông qua công nghệ hiện đại.
+              </p>
+            </div>
+          </div>
+        </div>
 
-              <!-- Nút Đăng nhập và Đăng ký -->
-              <div class="auth-buttons">
-                <a
-                  href="#"
-                  class="btn btn-login btn-register d-flex justify-content-center align-items-center"
+        <!-- Development Timeline -->
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-3xl font-bold text-center mb-16 relative">
+            <span
+              class="relative z-10 px-4 bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent"
+              >Hành Trình Phát Triển</span
+            >
+            <span
+              class="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-300 to-transparent transform -translate-y-1/2"
+            ></span>
+          </h3>
+
+          <div class="relative">
+            <!-- Main Timeline Line -->
+            <div
+              class="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-green-400 to-green-600 transform -translate-x-1/2"
+            ></div>
+
+            <!-- Timeline Items -->
+            <div class="space-y-16">
+              <!-- Item 1 -->
+              <div class="relative flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                  <div
+                    class="bg-white p-6 rounded-xl shadow-lg transform transition-all hover:scale-105"
+                  >
+                    <div class="text-green-500 font-bold text-lg mb-2">
+                      2018
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">
+                      Khởi Nghiệp
+                    </h4>
+                    <p class="text-gray-600">
+                      Thành lập với 5 nhân sự, văn phòng đầu tiên tại Hà Nội
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:block w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mx-4 z-10"
                 >
-                  <i class="fas fa-user"></i> Đăng nhập
-                </a>
-                <a
-                  href="#"
-                  class="btn btn-login btn-register d-flex justify-content-center align-items-center"
-                  >Đăng ký</a
+                  1
+                </div>
+                <div class="md:w-1/2 md:pl-12"></div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="relative flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12"></div>
+                <div
+                  class="hidden md:block w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mx-4 z-10"
                 >
+                  2
+                </div>
+                <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0">
+                  <div
+                    class="bg-white p-6 rounded-xl shadow-lg transform transition-all hover:scale-105"
+                  >
+                    <div class="text-green-500 font-bold text-lg mb-2">
+                      2019
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">
+                      Đột Phá Công Nghệ
+                    </h4>
+                    <p class="text-gray-600">
+                      Ra mắt phiên bản 2.0 với tính năng đấu giá trực tuyến và
+                      AI đánh giá xe
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="relative flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                  <div
+                    class="bg-white p-6 rounded-xl shadow-lg transform transition-all hover:scale-105"
+                  >
+                    <div class="text-green-500 font-bold text-lg mb-2">
+                      2020
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">
+                      Bùng Nổ
+                    </h4>
+                    <p class="text-gray-600">
+                      Đạt mốc 10.000 giao dịch/tháng, mở rộng sang thị trường
+                      TP.HCM
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:block w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mx-4 z-10"
+                >
+                  3
+                </div>
+                <div class="md:w-1/2 md:pl-12"></div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="relative flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12"></div>
+                <div
+                  class="hidden md:block w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mx-4 z-10"
+                >
+                  4
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                  <div
+                    class="bg-white p-6 rounded-xl shadow-lg transform transition-all hover:scale-105"
+                  >
+                    <div class="text-green-500 font-bold text-lg mb-2">
+                      2023
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">
+                      Toàn Quốc
+                    </h4>
+                    <p class="text-gray-600">
+                      Mở rộng hệ thống ra 3 miền với 5 văn phòng đại diện, 100+
+                      nhân viên
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </section>
 
-      <!-- Phần Giới thiệu -->
-      <section class="intro-section">
-        <div class="container text-center">
-          <h1 class="intro-title">Chào Mừng Đến Với Showroom Ô Tô VTT</h1>
-          <p class="intro-subtitle">Nơi Huyền Bí Gặp Gỡ Đẳng Cấp</p>
-          <div class="row g-5 intro-content mt-5">
-            <div class="col-lg-6 intro-text text-start">
-              <p class="lead">
-                Showroom Ô Tô VTT đại diện cho sự kết hợp hoàn hảo giữa sang
-                trọng và bí ẩn. Được thành lập vào năm 2020 tại 123 Đường Lê
-                Lợi, TP. Hà Nội, chúng tôi đã mang đến cho hơn 5.000 khách hàng
-                những chiếc xe đẳng cấp, định hình phong cách sống thượng lưu.
-              </p>
-              <p class="fw-bold mt-3">Chúng tôi mang đến:</p>
-              <ul class="list-unstyled">
-                <li>
-                  <strong>Dòng xe tinh tế:</strong> Sedan lịch lãm, SUV mạnh mẽ,
-                  xe bán tải cá tính từ Toyota, Mercedes, BMW, và các mẫu xe
-                  điện tiên tiến.
-                </li>
-                <li>
-                  <strong>Dịch vụ hoàn hảo:</strong> Tư vấn chuyên sâu, trả góp
-                  linh hoạt, bảo dưỡng cao cấp, lái thử độc quyền, và hỗ trợ
-                  thanh lý xe cũ.
-                </li>
-                <li>
-                  <strong>Cam kết tuyệt đối:</strong> Xe kiểm định chuẩn mực,
-                  minh bạch giá cả, bảo hành dài hạn, đội ngũ kỹ thuật hàng đầu
-                  thế giới.
-                </li>
-                <li>
-                  <strong>Đặc quyền thượng lưu:</strong> Tặng gói bảo hiểm toàn
-                  diện và phụ kiện cao cấp cho khách hàng đặt xe trong tháng
-                  này.
-                </li>
-              </ul>
-              <p>
-                Với tầm nhìn "Kiến tạo hành trình vượt thời gian", VTT không chỉ
-                cung cấp xe hơi, mà còn là nơi khởi nguồn cho những trải nghiệm
-                đầy phong cách và bí ẩn.
-              </p>
-              <a href="tel:0909123456" class="btn btn-contact mt-3"
-                >Khám Phá Ngay</a
-              >
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Tại sao chọn chúng tôi?
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300"
+          >
+            <div class="feature-icon mb-4">
+              <i class="fas fa-search text-5xl text-green-500"></i>
             </div>
-            <div class="col-lg-6 intro-image">
-              <img
-                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3"
-                alt="Showroom Ô Tô VTT"
-                class="img-fluid"
-              />
-            </div>
+            <h3 class="text-xl font-semibold mb-2">Tìm kiếm nâng cao</h3>
+            <p class="text-gray-600">
+              Tìm chiếc xe hoàn hảo với bộ lọc tìm kiếm mạnh mẽ và danh sách chi
+              tiết.
+            </p>
           </div>
-          <!-- Thống kê -->
-          <div class="row justify-content-center mt-5 intro-stats">
-            <div class="col-md-3 stat-item">
-              <h3>5.000+</h3>
-              <p>Khách Hàng Thượng Lưu</p>
+          <!-- Feature 2 -->
+          <div
+            class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300"
+          >
+            <div class="feature-icon mb-4">
+              <i class="fas fa-star text-5xl text-green-500"></i>
             </div>
-            <div class="col-md-3 stat-item">
-              <h3>15+</h3>
-              <p>Thương Hiệu Cao Cấp</p>
+            <h3 class="text-xl font-semibold mb-2">Đánh giá xác thực</h3>
+            <p class="text-gray-600">
+              Đọc đánh giá trung thực từ người mua đã xác minh để đưa ra quyết
+              định sáng suốt.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div
+            class="text-center p-6 rounded-lg hover:shadow-lg transition duration-300"
+          >
+            <div class="feature-icon mb-4">
+              <i class="fas fa-lock text-5xl text-green-500"></i>
             </div>
-            <div class="col-md-3 stat-item">
-              <h3>60+</h3>
-              <p>Chuyên Gia Tinh Tế</p>
+            <h3 class="text-xl font-semibold mb-2">Giao dịch an toàn</h3>
+            <p class="text-gray-600">
+              Mua bán với sự tự tin nhờ hệ thống thanh toán được bảo vệ của
+              chúng tôi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Khách hàng nói gì về chúng tôi
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Customer"
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-semibold">Nguyễn Văn A</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "Tìm được chiếc xe mơ ước chỉ trong 1 tuần! Quy trình rất trơn tru
+              và đội ngũ hỗ trợ cực kỳ nhiệt tình."
+            </p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Customer"
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-semibold">Trần Thị B</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "Bán được xe với giá tốt mà không gặp phiền phức. Nền tảng kết nối
+              tôi với người mua nghiêm túc rất nhanh chóng."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-green-600 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Sẵn sàng tìm chiếc xe hoàn hảo?</h2>
+        <p class="text-xl mb-8">
+          Tham gia cùng hàng ngàn khách hàng hài lòng đã tìm được xe mơ ước với
+          chúng tôi.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#"
+            class="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block"
+          >
+            Xem kho xe
+          </a>
+          <a
+            href="#"
+            class="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block"
+          >
+            Bán xe của bạn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">VTT</h3>
+            <p class="text-gray-400">
+              Đối tác đáng tin cậy của bạn trong mua bán xe trực tuyến.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Liên kết nhanh</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Danh sách xe</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Bán xe của bạn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Về chúng tôi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Liên hệ</h3>
+            <ul class="space-y-2">
+              <li class="text-gray-400">
+                <i class="fas fa-phone mr-2"></i> (123) 456-7890
+              </li>
+              <li class="text-gray-400">
+                <i class="fas fa-envelope mr-2"></i> info@carselling.com
+              </li>
+              <li class="text-gray-400">
+                <i class="fas fa-map-marker-alt mr-2"></i> 123 Car Street, Auto
+                City
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Theo dõi chúng tôi</h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-facebook-f text-xl"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-twitter text-xl"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-linkedin-in text-xl"></i
+              ></a>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Script tùy chỉnh (nếu có) -->
-    <script src="assets/js/script.js"></script>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 VTT. Bảo lưu mọi quyền.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

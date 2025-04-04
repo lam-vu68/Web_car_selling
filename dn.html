@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="./assets/css/dkdn.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Đăng Nhập</h2>
+        <form action="dashboard.html" method="POST">
+          <div class="input-group">
+            <label for="loginUsername">Tên Đăng Nhập</label>
+            <input
+              type="text"
+              id="loginUsername"
+              name="loginUsername"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="loginPassword">Mật Khẩu</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="loginPassword"
+              required
+            />
+          </div>
+          <button type="submit">Đăng Nhập</button>
+          <p class="switch-form">
+            Chưa có tài khoản? <a href="./dk.html">Đăng Ký</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

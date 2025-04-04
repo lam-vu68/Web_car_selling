@@ -1,3 +1,23 @@
+/* Responsive cho các thiết bị */
+@media (max-width: 1200px) {
+  .the-danh-muc {
+    height: 38rem; /* Giảm chiều cao trên màn hình nhỏ hơn */
+  }
+
+  .noi-dung-danh-muc h3 {
+    font-size: 4rem; /* 22px */
+  }
+
+  .noi-dung-danh-muc p {
+    font-size: 1.8rem; /* 13px */
+  }
+
+  .nut-xem-them {
+    font-size: 1.3rem; /* 13px */
+    padding: 0.8rem 1.6rem;
+  }
+}
+
 /* Tùy chỉnh cho màn hình lớn (từ 992px trở lên) */
 @media (min-width: 992px) {
   .navbar .container {
@@ -67,17 +87,69 @@
     display: flex;
     gap: 10px;
   }
+  .danh-muc-xe {
+    padding: 3rem 0;
+  }
+
+  .tieu-de-danh-muc h2 {
+    font-size: 2.8rem; /* 28px */
+  }
+
+  .tieu-de-danh-muc p {
+    font-size: 1.4rem;
+  }
+
+  .the-danh-muc {
+    height: 25rem;
+  }
+
+  .noi-dung-danh-muc h3 {
+    font-size: 2rem;
+  }
+
+  .noi-dung-danh-muc p {
+    font-size: 1.2rem;
+  }
+
+  .nut-xem-them {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.4rem;
+  }
 }
 
 @media (min-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
-    display: flex; /* Hiện nút điều hướng trên tablet và desktop */
+    display: flex;
   }
 }
 
 @media (max-width: 576px) {
   .swiper-slide {
-    width: 250px; /* Giảm chiều rộng slide trên mobile */
+    width: 250px;
+  }
+  .tieu-de-danh-muc h2 {
+    font-size: 2.4rem;
+  }
+
+  .tieu-de-danh-muc p {
+    font-size: 1.2rem;
+  }
+
+  .the-danh-muc {
+    height: 22rem; /* Giảm chiều cao trên mobile */
+  }
+
+  .noi-dung-danh-muc h3 {
+    font-size: 1.8rem; /* 18px */
+  }
+
+  .noi-dung-danh-muc p {
+    font-size: 1.1rem; /* 11px */
+  }
+
+  .nut-xem-them {
+    font-size: 1.1rem; /* 11px */
+    padding: 0.6rem 1.2rem;
   }
 }
